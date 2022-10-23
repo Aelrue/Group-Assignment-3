@@ -36,40 +36,40 @@ kittyCats(18); // "true"
 // would return "Sunday", dayOfWeekToString(2) would return "Tuesday").
 // NOTE: Use if / else if or switch for each day of the week within the function.
 
-function dayOfWeekToString(dayNumber) {
-  switch (dayNumber) {
-    case 0:
-      return "Sunday";
-      break;
-    case 1:
-      return "Monday";
-      break;
-    case 2:
-      return "Tuesday";
-      break;
-    case 3:
-      return "Wednesday";
-      break;
-    case 4:
-      return "Thursday";
-      break;
-    case 5:
-      return "Friday";
-      break;
-    case 6:
-      return "Saturday";
-      break;
-  }
-}
-let weekDay = dayOfWeekToString(4);
-console.log(weekDay);
+// function dayOfWeekToString(dayNumber) {
+//   switch (dayNumber) {
+//     case 0:
+//       return "Sunday";
+//       break;
+//     case 1:
+//       return "Monday";
+//       break;
+//     case 2:
+//       return "Tuesday";
+//       break;
+//     case 3:
+//       return "Wednesday";
+//       break;
+//     case 4:
+//       return "Thursday";
+//       break;
+//     case 5:
+//       return "Friday";
+//       break;
+//     case 6:
+//       return "Saturday";
+//       break;
+//   }
+// }
+// let weekDay = dayOfWeekToString(4);
+// console.log(weekDay);
 
 //5. Write a function that returns the current day of the week. NOTE: You will want to search for `getDay()` on MDN.
 // (getDayOfWeek() would return 'Wednesday'). There may be a lot of overlap with the previous function,
 // can you use the previous function to simplify your code?
 
 function getDayOfWeek(day) {
-  return (weekDay = [
+  let weekDay = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -77,7 +77,7 @@ function getDayOfWeek(day) {
     "Thursday",
     "Friday",
     "Saturday",
-  ]);
+  ];
 }
 
 //
