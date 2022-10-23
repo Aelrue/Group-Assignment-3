@@ -1,3 +1,6 @@
+// 0. Describe a function in your own words.
+// A function is a block of code that can be run repeatedly
+//1. Write a function that logs "Hello World" when called.
 function greeting() {
   console.log("Hello World");
 }
@@ -65,8 +68,8 @@ console.log(weekDay);
 // (getDayOfWeek() would return 'Wednesday'). There may be a lot of overlap with the previous function,
 // can you use the previous function to simplify your code?
 
-function dayOfWeekToString(day) {
-  const weekDay = [
+function getDayOfWeek(day) {
+  return (weekDay = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -74,11 +77,12 @@ function dayOfWeekToString(day) {
     "Thursday",
     "Friday",
     "Saturday",
-  ];
+  ]);
 }
 
-let w;
-
+//
+//
+//
 function trueOrFalse(num) {
   switch (num) {
     case 0:
@@ -133,3 +137,21 @@ function introduce(name, age, country) {
 introduce("Allie", 29, "Mahtomedi, Minnesota");
 introduce("Geordi La Forge", 7, "Missouri");
 introduce("Kurt", 29, "Stillwater, Minnesota");
+
+function animalType(name) {
+  switch (name) {
+    case "Geordi":
+      return "Canine";
+      break;
+    case "Wesley":
+      return "Devil";
+      break;
+    case "Jaskier":
+      return "Feline";
+      break;
+    default:
+      return "Name not entered";
+  }
+}
+let pet = animalType();
+console.log(pet);
