@@ -80,18 +80,12 @@ console.log(weekDay);
 // (getDayOfWeek() would return 'Wednesday'). There may be a lot of overlap with the previous function,
 // can you use the previous function to simplify your code?
 
-function getDayOfWeek(day) {
-  let weekDay = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
+function getDayOfWeek() {
+  let today = new Date("October 24, 2022");
+  let day1 = today.getDay();
+  return dayOfWeekToString(day1);
 }
-
+console.log(getDayOfWeek());
 // end #5
 
 // 6. Write a function that logs the number of times it's been called to the
@@ -99,7 +93,14 @@ function getDayOfWeek(day) {
 // Running it again would log 'You have called this function 2 times'.) This one is
 // more challenging that it sounds but should generate some good conversation!
 //
-
+let count = 0;
+function callCounter() {
+  count++;
+  console.log("You have called this function " + count + " times.");
+}
+callCounter();
+callCounter();
+callCounter();
 // end #6
 
 // Own Practice:
