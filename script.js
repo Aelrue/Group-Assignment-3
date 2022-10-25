@@ -103,6 +103,27 @@ callCounter();
 callCounter();
 // end #6
 
+// 7. Write a function that takes in an Array and a string. Return the number of times
+// you found the string in the Array. countStringInArray('green', ['red', 'green',
+// 'yellow', 'blue', 'green']) would return 2
+
+function countStringInArray(array, string) {
+  let counter = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === string) {
+      counter++;
+    }
+  }
+  return counter;
+}
+
+console.log(
+  countStringInArray(
+    ["Dog", "Cat", "Toad", "Chicken", "Toad", "Toad", "Toad"],
+    "Toad"
+  )
+);
+
 // Own Practice:
 function trueOrFalse(num) {
   switch (num) {
