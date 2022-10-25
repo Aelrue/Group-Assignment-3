@@ -8,6 +8,8 @@ greeting();
 
 // end #1
 
+// 2. Write a function that takes in a number and logs "Hello World" that number of times
+
 function greeting(num) {
   for (let i = 0; i < num; i++) {
     console.log("Hello World");
@@ -21,14 +23,22 @@ greeting(5);
 
 function kittyCats(num) {
   if (num < 0) {
-    console.log("false");
+    return false;
   } else {
-    console.log("true");
+    return true;
   }
 }
 
-kittyCats(-3); // "false"
-kittyCats(18); // "true"
+console.log(kittyCats(-3)); // "false"
+console.log(kittyCats(18)); // "true"
+
+// Also #3, I guess... Write a function that takes in a number in Kelvin and returns the
+// temperature in Fahrenheit. You can Google how to convert K to F.
+
+function kToF(tempK) {
+  return ((tempK - 273.15) * 9) / 5 + 32;
+}
+console.log(kToF(25));
 
 // end #3
 
@@ -36,33 +46,35 @@ kittyCats(18); // "true"
 // would return "Sunday", dayOfWeekToString(2) would return "Tuesday").
 // NOTE: Use if / else if or switch for each day of the week within the function.
 
-// function dayOfWeekToString(dayNumber) {
-//   switch (dayNumber) {
-//     case 0:
-//       return "Sunday";
-//       break;
-//     case 1:
-//       return "Monday";
-//       break;
-//     case 2:
-//       return "Tuesday";
-//       break;
-//     case 3:
-//       return "Wednesday";
-//       break;
-//     case 4:
-//       return "Thursday";
-//       break;
-//     case 5:
-//       return "Friday";
-//       break;
-//     case 6:
-//       return "Saturday";
-//       break;
-//   }
-// }
-// let weekDay = dayOfWeekToString(4);
-// console.log(weekDay);
+function dayOfWeekToString(dayNumber) {
+  switch (dayNumber) {
+    case 0:
+      return "Sunday";
+      break;
+    case 1:
+      return "Monday";
+      break;
+    case 2:
+      return "Tuesday";
+      break;
+    case 3:
+      return "Wednesday";
+      break;
+    case 4:
+      return "Thursday";
+      break;
+    case 5:
+      return "Friday";
+      break;
+    case 6:
+      return "Saturday";
+      break;
+  }
+}
+let weekDay = dayOfWeekToString(4);
+console.log(weekDay);
+
+// end #4
 
 //5. Write a function that returns the current day of the week. NOTE: You will want to search for `getDay()` on MDN.
 // (getDayOfWeek() would return 'Wednesday'). There may be a lot of overlap with the previous function,
@@ -80,9 +92,17 @@ function getDayOfWeek(day) {
   ];
 }
 
+// end #5
+
+// 6. Write a function that logs the number of times it's been called to the
+// console. (callCounter(); would log 'You have called this function 1 time'.
+// Running it again would log 'You have called this function 2 times'.) This one is
+// more challenging that it sounds but should generate some good conversation!
 //
-//
-//
+
+// end #6
+
+// Own Practice:
 function trueOrFalse(num) {
   switch (num) {
     case 0:
